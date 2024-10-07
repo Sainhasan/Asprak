@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="su.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        form{
+            border: 3px solid#ffe5a6;
+            font-family: arial;
+            width: 30%;
+            margin: 0 auto;
+            margin-top: 110px;
+            padding: 10px;
+            display: block;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(0, 0, 0);
+            box-sizing: border-box;
+        }
+        label{
+            color:#030303;
+            text-transform: uppercase;
+        }
+        button {
+            background-color: #ffe5a6;
+            color: rgb(0, 0, 0);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: medium;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .container{
+            padding: 16px;
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: auto;
+            border-radius: 70px;
+        }
+        @media (max-width: 900px) {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        
+            form {
+                width: 50%; /* Menyesuaikan form agar lebih lebar pada layar kecil */
+            }
+        
+            label {
+                font-size: 1.2rem; /* Menyesuaikan ukuran font label */
+            }
+        
+            button {
+                font-size: 1rem; /* Memperbesar ukuran tombol untuk aksesibilitas di layar kecil */
+            }
+        
+            input[type=text], input[type=password] {
+                font-size: 1rem; /* Menjaga ukuran input agar tetap terbaca */
+                padding: 10px; /* Sedikit pengurangan padding untuk menjaga proporsi di layar kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <form name="formlogin" onsubmit="akses(event)">
+        <img src="PP.jpg" alt="potopropil">
+        <div class="container">
+            <label> Username </label>
+            <input type="text" placeholder="USERNAME" name="user" required>
+            <label> Password </label>
+            <input type="password" placeholder="PASSWORD" name="pas" required>
+            <button type="submit"><b>LOGIN</b></button>
+        </div>
+    </form>
+</body>
+</html>
